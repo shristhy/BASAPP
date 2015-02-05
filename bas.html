@@ -10,6 +10,7 @@
    
 
     <title>Narrow Jumbotron Template for Bootstrap</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="bas.js"></script>
 
     <!-- Bootstrap core CSS -->
@@ -138,5 +139,29 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+
+var newStudent = false;
+
+$('input[type="text"]').focus(function() {
+    $(this).addClass("focus");
+});
+ 
+$('input[type="text"]').blur(function() {
+    $(this).removeClass("focus");
+});
+
+$("#ns").click(function(){
+    $("#sid").hide();
+    newStudent = true;
+});
+
+$("#cs").click(function(){
+    $("#sid").show();
+    newStudent = false;
+});
+
+</script>
+
   </body>
 </html>
