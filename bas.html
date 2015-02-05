@@ -90,26 +90,41 @@
  <textarea id="note" name="note" cols="30" rows="5"></textarea></p>
                     
 </p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
         </div>
 
         <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <h4>Network Administration and Security Prerequisites</h4>
+          <h5>Please check the classes you have taken</h5>
+          <h6>Note: If you don't meet all of the prerequisites, or have extensive industry experience, an advisor will contact you to discuss options.</h6>
+          <p>
+            <input type="checkbox" id="CCENT" name="CCENT" value="CCENT">IT 210 or CCENT</input>
+            <br><input type="checkbox" id="MTA" name="MTA" value="MTA">IT 160 or MTA</input>
+            <br><input type="checkbox" id="Linux" name="Linux" value="Linux">IT 190 or LPI1 or Linux Essentials</input>
+            <br><input type="checkbox" id="102" name="102" value="102">IT 102 or a programming course</input>
+            <br><input type="checkbox" id="240" name="240" value="240">IT 240 or 70-411 Microsoft MCP</input>
+              <p>Comments:<br>
+ <textarea id="note" name="note" cols="30" rows="5"></textarea></p>
+          </p>
         </div>
       </div>
+          <h4>Education</h4>
+          <h5>Please check all that you have achieved</h5>
+          <p>
+            <input type="checkbox" id="GED" name="GED" value="GED">HIgh school diploma or GED</input>
+            <br><input type="checkbox" id="AD" name="AD" value="AD">Associates degree (AA, AS, AAS, AAS-T)</input>
+            <br><input type="checkbox" id="BD" name="BD" value="BD">Bachelor's degree</input>
+            <br><input type="checkbox" id="MD" name="MD" value="MD">Master's degree</input>
+            <br><input type="checkbox" id="PHD" name="PHD" value="PHD">Ph.D.</input>                 
+          </p>
 
+          <h4>Credits</h4>
+          <h5>Please enter the number of credits you have earned thus far</h5>
+          <textarea id="note" name="note" cols="3" rows="1"></textarea>
+          
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          </form>
+          
       <footer class="footer">
         <p>&copy; Company 2014</p>
       </footer>
