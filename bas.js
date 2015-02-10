@@ -37,5 +37,23 @@
                 return false;
             } 
         }
+        
+        var e=document.forms["mockupbas"]["software"];
+        if (document.getElementById('software').checked)
+        {
+            var sDiv=document.createElement('div');
+            
+            
+        }
+        
+        else if (document.getElementById('network').checked)
+        {
+            network.append();
+        }
+        
+        else if (document.getElementById('ud').checked)
+        {
+            ud.append();
+        }
         return true;
     }
