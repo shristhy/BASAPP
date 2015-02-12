@@ -1,7 +1,11 @@
+<?php
+  session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +33,7 @@
   </head>
 
   <body>
-
+  <?php include connect.php";?>
     <div class="container">
       <div class="header">
         <nav>
@@ -43,7 +47,7 @@
       </div>
 
       <div class="jumbotron">
-        <form method="post" name="mockupbas" action="success.html" onsubmit="return(validateForm());">
+        <form method="post" name="mockupbas" action="connect.php" onsubmit="return(validateForm());">
 
        
        <h3>Please select one:</h3>
@@ -73,40 +77,32 @@
     <input type="radio" id="network" name="degree" value="network"> Network & Security </input>
     <input type="radio" id="ud" name="degree" value="ud"> Undecided</input>
         
-        <br><input type="submit" value="Submit">
-
-    </form>
-      </div>
-
-      <div class="row marketing" id="software">
+        
+        <div class="row marketing" id="software">
         <div class="col-lg-6">
           <h4>Software Development Prerequistes</h4>
          <h5>Please check the classes you have taken</h5>
           <h6>Note: If you don't meet all of the prerequisites, or have extensive industry experience, an advisor will contact you to discuss options.</h6>
 
-<p>         <input type="checkbox" id="core" name="core" value="core"> Programming I and II (CSCI 141&145 or CSCI 131&132)</input>
+            <input type="checkbox" id="core" name="core" value="core"> Programming I and II (CSCI 141&145 or CSCI 131&132)</input>
             <br><input type="checkbox" id="201" name="201" value="201">IT 201:  Database Fundamentals, or equivalent </input>
             <br><input type="checkbox" id="190" name="190" value="190">IT 190:  Intro to Linux or LPI1 or Linux Essentials</input>
             <br><input type="checkbox" id="121" name="121" value="121">IT 121:  HTML/CSS, or equivalent</input>
             <p>Comments:<br>
- <textarea id="note" name="note" cols="30" rows="5"></textarea></p>
-                    
-</p>
+ <textarea id="note" name="note" cols="10" rows="3"></textarea></p>
         </div>
 
         <div class="col-lg-6" id="network">
           <h4>Network Administration and Security Prerequisites</h4>
           <h5>Please check the classes you have taken</h5>
           <h6>Note: If you don't meet all of the prerequisites, or have extensive industry experience, an advisor will contact you to discuss options.</h6>
-          <p>
             <input type="checkbox" id="CCENT" name="CCENT" value="CCENT">IT 210 or CCENT</input>
             <br><input type="checkbox" id="MTA" name="MTA" value="MTA">IT 160 or MTA</input>
             <br><input type="checkbox" id="Linux" name="Linux" value="Linux">IT 190 or LPI1 or Linux Essentials</input>
             <br><input type="checkbox" id="102" name="102" value="102">IT 102 or a programming course</input>
             <br><input type="checkbox" id="240" name="240" value="240">IT 240 or 70-411 Microsoft MCP</input>
               <p>Comments:<br>
- <textarea id="note" name="note" cols="30" rows="5"></textarea></p>
-          </p>
+ <textarea id="note" name="note" cols="10" rows="3"></textarea></p>
         </div>
       </div>
           <h4>Education</h4>
@@ -127,18 +123,20 @@
           <h5>If you want, you can upload your unofficial transcript here</h5>
           <form action="upload.php" method="post" enctype="multipart/form-data">
           <input type="file" name="fileToUpload" id="fileToUpload">
+            <br><input type="submit" value="Submit">
           </form>
-          
-      <footer class="footer">
-        <p>&copy; Company 2014</p>
-      </footer>
+        
+        
+
+    </form>
+      </div>
+
+
 
     </div> <!-- /container -->
-    
-    
-
-
-
+    <div class="jumbotron" id="new_div">
+      <h1>NEW CONTENT</h1>
+    </div>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
@@ -163,6 +161,10 @@ $("#cs").click(function(){
     newStudent = false;
 });
 
+$("#continue").onclick(function()
+    {
+      $("#new_div").append();
+    });
 </script>
 
   </body>

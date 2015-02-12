@@ -14,8 +14,6 @@
             return false;
         }
         
-        
-        
         var c=document.forms["mockupbas"]["sid"].value;
         
         if(newStudent == false) {
@@ -54,6 +52,13 @@
         else if (document.getElementById('ud').checked)
         {
             ud.append();
+        }
+        
+        var f=document.forms["mockupbas"]["email"].value;
+        if (document.getElementById('verify').unchecked)
+        {
+            alert("You must verify that your information is correct");
+            return false;
         }
         return true;
     }
