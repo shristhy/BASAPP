@@ -1,12 +1,12 @@
 <?php
-    $username="xanderkr";
-    $password="Spartan18";
+    $username="shristhy";
+    $password="toodle101292";
     $hostname="localhost";
-    $dbname="xanderkr_grcc";
+    $dbname="shristhy_grcc";
     
     //connecting
   $dbh=new PDO("mysql:host=$hostname;
-               dbname=xanderkr_grcc", $username, $password);
+               dbname=shristhy_grcc", $username, $password);
   echo "Connected";
   
   //define the query
@@ -33,6 +33,13 @@
   
   //execute the query
   $statement->execute();
+
+ //Displaying Applicants information  
+ echo $_POST["fname"];
+ echo $_POST["lname"];
+ echo $_POST["sid"];
+ echo $_POST["email"];
+  
   
   $sql= "SELECT First, Last, SID, Email FROM Applicants";
   $statement = $dbh->prepare($sql);
